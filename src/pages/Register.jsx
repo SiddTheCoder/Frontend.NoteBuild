@@ -28,7 +28,7 @@ function Register() {
     try {
       setLoading(true);
       console.log('Sending Request:', userCredentials);
-      const response = await axios.post('https://buildnote.onrender.com/api/user/register-user', userCredentials ,{withCredentials : true});
+      const response = await axios.post('https://backendbuildnote-production.up.railway.app/api/user/register-user', userCredentials ,{withCredentials : true});
       console.log('Response received:', response);
       setData(response.data.data);
       if (response.statusText == 'OK' || response.status == 200 || response.status == 201) {

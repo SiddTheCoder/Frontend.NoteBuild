@@ -11,7 +11,7 @@ const PrivateRoute = () => {
     const checkAuth = async () => {
       try {
         console.log('Sending request to verify user')
-        const response = await axios.get('https://buildnote.onrender.com/api/auth/verifyUser', {
+        const response = await axios.get('https://backendbuildnote-production.up.railway.app/api/auth/verifyUser', {
           withCredentials: true,  
         });
         console.log('Request ACcepted For Verificaton of user' , response)
